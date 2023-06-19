@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {BsInstagram,BsYoutube,BsGithub } from "react-icons/bs";
+import PrivacyPolicy from '../Page/PrivacyPolicy';
+import RefundPolicy from '../Page/RefundPolicy';
+import ShippingPolicy from '../Page/ShippingPolicy';
+import Terms from "../Page/Terms";
+import newsletterLogo from "../images/newsletter.png"
+
 const Footer = () => {
   return (
     <>
@@ -9,7 +15,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-5">
             <div className="footer-top-data d-flex align-items-center gap-30">
-              <img src="images/newsletter.png" alt="newsletter" />
+              <img src={newsletterLogo} alt="newsletter" />
               <h2 className='text-white mb-0'>Sign Up For Newsletter</h2>
             </div>
           </div>
@@ -69,11 +75,11 @@ const Footer = () => {
               Information
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 ">Privacy Policy</Link>
-              <Link className="text-white py-2">Refund Policy </Link>
-              <Link className="text-white py-2">Shipping Policy</Link>
-              <Link className="text-white py-2">Terms and Conditions</Link>
-              <Link className="text-white py-2">Blogs</Link>
+              <Link to="/PrivacyPolicy" className="text-white py-2 ">Privacy Policy</Link>
+              <Link to="/RefundPolicy" className="text-white py-2">Refund Policy </Link>
+              <Link to="/ShippingPolicy" className="text-white py-2">Shipping Policy</Link>
+              <Link to = "/Terms" className="text-white py-2">Terms and Conditions</Link>
+              <Link  className="text-white py-2">Blogs</Link>
 
 
 

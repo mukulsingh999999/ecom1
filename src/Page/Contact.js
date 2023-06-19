@@ -5,15 +5,14 @@ import {AiOutlineHome} from "react-icons/ai";
 import {BiPhoneCall} from "react-icons/bi";
 import {AiOutlineMail} from "react-icons/ai"
 import {BiInfoCircle} from "react-icons/bi"
-
+import Container from "../components/Container"
 
 const Contact = () => {
   return (
     <>
     <Meta title={"Contact Us"}/>
     <BreadCrumb title="Contact Us"/>
-    <div className="contact-wrapper py-5 home-wrapper-2">
-      <div className="container-xxl">
+      <Container class1="contact-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217.61693606731097!2d79.4200392833219!3d29.22734938023734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09b741804a823%3A0xa39a9cda3746d800!2sAmrapali%20Institute%20of%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1683556165667!5m2!1sen!2sin" width="600" height="450" className='border-0 w-100'  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -74,10 +73,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
-    
+      </Container>
+  
     </>
   )
 }

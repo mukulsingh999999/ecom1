@@ -1,6 +1,10 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from "../components/Meta";
+import productImage from "../images/watch.jpg"
+import crossLogo from "../images/cross.svg"
+
+import Container from "../components/Container"
 
 const CompareProducts = () => {
   return (
@@ -8,15 +12,14 @@ const CompareProducts = () => {
     <Meta title = {"CompareProducts"}/>
     <BreadCrumb title="CompareProducts"/>
 
-      <div className="compare-product-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
+      <Container class1="compare-product-wrapper py-5 home-wrapper-2">
+        <div className="row">
             <div className="col-3">
               <div className="compare-products-card position-relative">
-                <img className="cross position-absolute" src="images/cross.svg" alt="cross" />
+                <img className="cross position-absolute" src={crossLogo} alt="cross" />
 
                 <div className="product-card-image">
-                  <img src="images/watch.jpg" alt="watch" />
+                  <img src={productImage} alt="watch" />
                 </div>
                 <div className="compare-products-details">
                   <h5 className="title">
@@ -57,13 +60,8 @@ const CompareProducts = () => {
 
             </div>
           </div>
-        </div>
-      </div>
-    
-    
-    
-    
-    
+      </Container>
+      
     </>
   )
 }

@@ -1,16 +1,36 @@
 import React from 'react'
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from "../components/Meta";
+import Container from "../components/Container"
+//////////////////////////////////////////////////////////////
+import affordablePhone1 from "../images/samsungm13.jpg";
+import affordablePhone2 from "../images/samsungm04.jpg";
+import affordablePhone3 from "../images/realmen55.jpg";
+import affordablePhone4 from "../images/RedmiA1.jpg";
+
+import midrangePhone1 from "../images/k50i.jpg";
+import midrangePhone2 from "../images/narzo50.jpg"
+import midrangePhone3 from "../images/a14.jpg"
+import midrangePhone4 from "../images/a77s.jpg"
+import midrangeBanner from "../images/midrange.jpg"
+
+import premiumphoneBanner from "../images/premium.jpg"
+import premiumphone1 from "../images/iphon14pro.jpg";
+import premiumphone2 from "../images/12pro.jpg";
+import premiumphone3 from "../images/10t.jpg";
+import premiumphone4 from "../images/s23ultra.jpg";
+//////////////////////////////////////////////////////////////
+
+
 
 const OurStore = () => {
   return (
     <>
-       <Meta title = {"Our Store"}/>
+      <Meta title = {"Our Store"}/>
       <BreadCrumb title = "Our Store"/>
 
-      <div className="store-wrapper  home-wrapper-2 py-5">
-        <div className="container-xxl">
-            <div className="row">
+      <Container class1="store-wrapper home-wrapper-2 py-5">
+        <div className="row">
                 <div className="col-3">
                     <div className='filter-card mb-3'>
                       <h3 className="filter-title">Shop by Categories</h3>
@@ -79,23 +99,23 @@ const OurStore = () => {
                         Best Selling Affordable Smartphones
                       </h3>
                       <div className="col-12 my-4">
-                      <img className="best-img"src="images/samsungm04.jpg" alt="m04" />
-                      <img className="best-img"src="images/realmen55.jpg" alt="n55" />
-                      <img className="best-img"src="images/redmia1.jpg" alt="a1" />
-                      <img className="best-img"src="images/samsungm13.jpg" alt="m13" />
+                      <img className="best-img"src={affordablePhone1} alt="m04" />
+                      <img className="best-img"src={affordablePhone2} alt="n55" />
+                      <img className="best-img"src={affordablePhone3} alt="a1" />
+                      <img className="best-img"src={affordablePhone4} alt="m13" />
 
                    </div>
                   </div>
 
                   <div className="budget-phones p-4 mt-4">
                   <div className="bxc-grid__image   bxc-grid__image--light">
-                     <img src="images/midrange.jpg" alt="premium" />
+                     <img src={midrangeBanner} alt="midrange" />
                      </div>
                       <div className="col-12 my-4">
-                      <img className="best-img"src="images/k50i.jpg" alt="m04" />
-                      <img className="best-img"src="images/narzo50.jpg" alt="n55" />
-                      <img className="best-img"src="images/a14.jpg" alt="a1" />
-                      <img className="best-img"src="images/a77s.jpg" alt="m13" />
+                      <img className="best-img"src={midrangePhone1} alt="m04" />
+                      <img className="best-img"src={midrangePhone2} alt="n55" />
+                      <img className="best-img"src={midrangePhone3} alt="a1" />
+                      <img className="best-img"src={midrangePhone4} alt="m13" />
 
                       </div>
                       
@@ -103,14 +123,14 @@ const OurStore = () => {
 
                     <div className="premium-phones p-4 mt-4">
                     <div className="bxc-grid__image   bxc-grid__image--light">
-                      <img src="images/premium.jpg" alt="premium" />
+                      <img src={premiumphoneBanner} alt="premium" />
                     </div>
                   
                       <div className="col-12 my-4">
-                      <img className="best-img"src="images/iphon14pro.jpg" alt="m04" />
-                      <img className="best-img"src="images/12pro.jpg" alt="n55" />
-                      <img className="best-img"src="images/10t.jpg" alt="a1" />
-                      <img className="best-img"src="images/s23ultra.jpg" alt="m13" />
+                      <img className="best-img"src={premiumphone1} alt="m04" />
+                      <img className="best-img"src={premiumphone2} alt="n55" />
+                      <img className="best-img"src={premiumphone3} alt="a1" />
+                      <img className="best-img"src={premiumphone4} alt="m13" />
 
                       </div>
                       
@@ -118,14 +138,14 @@ const OurStore = () => {
 
                     <div className="best-offers p-4 mt-4">
                     <div className="bxc-grid__image   bxc-grid__image--light">
-                      <img src="images/bigoffers.jpg" alt="premium" />
+                      <img src={premiumphoneBanner} alt="premium" />
                     </div>
                   
                       <div className="col-12 my-4">
-                      <img className="best-img"src="images/iphon14pro.jpg" alt="m04" />
-                      <img className="best-img"src="images/12pro.jpg" alt="n55" />
-                      <img className="best-img"src="images/10t.jpg" alt="a1" />
-                      <img className="best-img"src="images/s23ultra.jpg" alt="m13" />
+                      <img className="best-img"src={premiumphone1} alt="m04" />
+                      <img className="best-img"src={premiumphone2} alt="n55" />
+                      <img className="best-img"src={premiumphone3} alt="a1" />
+                      <img className="best-img"src={premiumphone4} alt="m13" />
 
                       </div>
                       
@@ -133,13 +153,10 @@ const OurStore = () => {
 
                   </div>
                     
-                    
-                    
 
             </div>
-        </div>
-
-      </div>
+      </Container>
+    
     </>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from "../components/Meta";
+import crossLogo from "../images/cross.svg"
+import wishlistProduct from "../images/watch.jpg"
 
 const Wishlist = () => {
   return (
@@ -14,10 +16,10 @@ const Wishlist = () => {
                 <div className="col-3">
 
                     <div className="wishlist-card position-relative">
-                        <img className='position-absolute cross img-fluid' src="images/cross.svg" alt="cross" /> 
+                        <img className='position-absolute cross img-fluid' src={crossLogo} alt="cross" /> 
 
                     <div className="wishlist-card-image">
-                        <img className = "img-fluid w-100"src="images/watch.jpg" alt="watch" />
+                        <img className = "img-fluid w-100"src={wishlistProduct} alt="watch" />
                     </div>
 
                     <div className='py-3'>
@@ -34,10 +36,10 @@ const Wishlist = () => {
                 <div className="col-3">
 
                     <div className="wishlist-card position-relative">
-                        <img className='position-absolute cross img-fluid' src="images/cross.svg" alt="cross" /> 
+                        <img className='position-absolute cross img-fluid' src={crossLogo} alt="cross" /> 
 
                     <div className="wishlist-card-image">
-                        <img className = "img-fluid w-100"src="images/watch.jpg" alt="watch" />
+                        <img className = "img-fluid w-100"src={wishlistProduct}  alt="watch" />
                     </div>
 
                     <div className='py-3'>
@@ -54,10 +56,10 @@ const Wishlist = () => {
                 <div className="col-3">
 
                     <div className="wishlist-card position-relative">
-                        <img className='position-absolute cross img-fluid' src="images/cross.svg" alt="cross" /> 
+                        <img className='position-absolute cross img-fluid' src={crossLogo} alt="cross" /> 
 
                     <div className="wishlist-card-image">
-                        <img className = "img-fluid w-100"src="images/watch.jpg" alt="watch" />
+                        <img className = "img-fluid w-100"src={wishlistProduct}  alt="watch" />
                     </div>
 
                     <div className='py-3'>

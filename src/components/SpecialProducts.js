@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+///////////////////////////////////////////
+import watch2 from "../images/watch.jpg"
+////////////////////////////////////////
 
 const SpecialProducts = () => {
   return (
@@ -6,7 +9,7 @@ const SpecialProducts = () => {
     <div className="col-3">
         <div className="special-product-card">
             <div className="d-flex justify-content-between">
-                <img src="images/watch.jpg" alt="watch" />
+                <img src={watch2} alt="watch" />
 
             </div>
         </div>
