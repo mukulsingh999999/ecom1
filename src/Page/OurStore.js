@@ -2,6 +2,10 @@ import React from 'react'
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from "../components/Meta";
 import Container from "../components/Container"
+import CustomInput from  "../components/CustomInput"
+import { Link } from 'react-router-dom';
+import SingleProduct from './SingleProduct';
+
 //////////////////////////////////////////////////////////////
 import affordablePhone1 from "../images/samsungm13.jpg";
 import affordablePhone2 from "../images/samsungm04.jpg";
@@ -68,6 +72,8 @@ const OurStore = () => {
                         <div className="d-flex align-items-center">
 
                         <div class="form-floating mb-3">
+                            {/* <CustomInput type="text" className="form-control" id="floatingInput" /> */}
+
                             <input type="email" class="form-control" id="floatingInput" placeholder="From"/>
                             <label for="floatingInput">From</label>
                           </div>
@@ -99,10 +105,12 @@ const OurStore = () => {
                         Best Selling Affordable Smartphones
                       </h3>
                       <div className="col-12 my-4">
-                      <img className="best-img"src={affordablePhone1} alt="m04" />
-                      <img className="best-img"src={affordablePhone2} alt="n55" />
-                      <img className="best-img"src={affordablePhone3} alt="a1" />
-                      <img className="best-img"src={affordablePhone4} alt="m13" />
+                        <Link to = "/SingleProduct">
+                      <img className="best-img"src={affordablePhone2} alt="m04" />
+                      <img className="best-img"src={affordablePhone3} alt="n55" />
+                      <img className="best-img"src={affordablePhone4} alt="a1" />
+                      <img className="best-img"src={affordablePhone1} alt="m13" />
+                        </Link>
 
                    </div>
                   </div>
@@ -112,28 +120,13 @@ const OurStore = () => {
                      <img src={midrangeBanner} alt="midrange" />
                      </div>
                       <div className="col-12 my-4">
+                      <Link to = "/SingleProduct">
                       <img className="best-img"src={midrangePhone1} alt="m04" />
                       <img className="best-img"src={midrangePhone2} alt="n55" />
                       <img className="best-img"src={midrangePhone3} alt="a1" />
                       <img className="best-img"src={midrangePhone4} alt="m13" />
-
+                      </Link>
                       </div>
-                      
-                    </div>
-
-                    <div className="premium-phones p-4 mt-4">
-                    <div className="bxc-grid__image   bxc-grid__image--light">
-                      <img src={premiumphoneBanner} alt="premium" />
-                    </div>
-                  
-                      <div className="col-12 my-4">
-                      <img className="best-img"src={premiumphone1} alt="m04" />
-                      <img className="best-img"src={premiumphone2} alt="n55" />
-                      <img className="best-img"src={premiumphone3} alt="a1" />
-                      <img className="best-img"src={premiumphone4} alt="m13" />
-
-                      </div>
-                      
                     </div>
 
                     <div className="best-offers p-4 mt-4">
@@ -142,11 +135,12 @@ const OurStore = () => {
                     </div>
                   
                       <div className="col-12 my-4">
-                      <img className="best-img"src={premiumphone1} alt="m04" />
-                      <img className="best-img"src={premiumphone2} alt="n55" />
-                      <img className="best-img"src={premiumphone3} alt="a1" />
-                      <img className="best-img"src={premiumphone4} alt="m13" />
-
+                      <Link to = "/SingleProduct">
+                        <img className="best-img"src={premiumphone1} alt="m04" />
+                        <img className="best-img"src={premiumphone2} alt="n55" />
+                        <img className="best-img"src={premiumphone3} alt="a1" />
+                        <img className="best-img"src={premiumphone4} alt="m13" />
+                      </Link>
                       </div>
                       
                     </div>

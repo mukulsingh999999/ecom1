@@ -6,6 +6,8 @@ import {BiPhoneCall} from "react-icons/bi";
 import {AiOutlineMail} from "react-icons/ai"
 import {BiInfoCircle} from "react-icons/bi"
 import Container from "../components/Container"
+import CustomInput from  "../components/CustomInput"
+
 
 const Contact = () => {
   return (
@@ -26,13 +28,13 @@ const Contact = () => {
                 </h3>
                   <form action="" className='d-flex flex-column gap-15'>
                     <div>
-                      <input type="text" className='form-control' placeholder='Name'/>
+                      <CustomInput type="text" className='form-control' placeholder='Name'/>            
                     </div>
                     <div>
-                      <input type="text" className='form-control' placeholder='Email'/>
+                      <CustomInput type="text" className='form-control' placeholder='Email'/>
                     </div> 
                     <div>
-                      <input type="text" className='form-control' placeholder='Mobile'/>
+                    <CustomInput type="number" className='form-control' placeholder='Mobile'/>
                     </div>
                     <div>
                       <textarea name="" id="" cols="30" rows="10" className='form-control' placeholder='Comments'>

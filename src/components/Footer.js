@@ -6,6 +6,8 @@ import RefundPolicy from '../Page/RefundPolicy';
 import ShippingPolicy from '../Page/ShippingPolicy';
 import Terms from "../Page/Terms";
 import newsletterLogo from "../images/newsletter.png"
+import CustomInput from  "../components/CustomInput"
+
 
 const Footer = () => {
   return (
@@ -19,17 +21,18 @@ const Footer = () => {
               <h2 className='text-white mb-0'>Sign Up For Newsletter</h2>
             </div>
           </div>
-          <div className="col-7">
-          <div class="input-group">
-              <input type="text" 
-              class="form-control" 
-              placeholder="Your email" 
-              aria-label="Your email" 
-              aria-describedby="basic-addon2"/>
+          <div className="col-7 d-flex">
+              {/* <CustomInput type="text" 
+                classname="form-control" 
+                placeholder="Your email" /> */}
+                <input type="text" 
+                class="form-control" 
+                placeholder="Your email" 
+                />
               <span className='input-group-text p-2 id=basic-addon2'>
-                Subscribe</span>
+              Subscribe</span>
           </div>
-          </div>
+
 
         </div>
       </div>

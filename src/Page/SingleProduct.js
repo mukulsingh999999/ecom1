@@ -8,17 +8,17 @@ import { Link } from 'react-router-dom';
 import {BiGitCompare} from "react-icons/bi";
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import Container from "../components/Container"
+import productImage from "../images/samsung-m04.jpg"
+
+import fphone1 from "../images/iphone14pro.jpg";
+import fphone2 from "../images/galaxys22.jpg";
+import fphone3 from "../images/galaxys22ultra.jpg";
+import fphone4 from "../images/xiamo12tpro.jpg";
 
 
 
-const SingleProduct = () => {
-    const props = {
-        
-        width: 400, height:600,
-        zoomWidth:600,
-        img:"https://cdn.shopify.com/s/files/1/0997/6284/files/1_77e673f8-14be-4be8-8680-9b1dd1e706e0_480x.png?v=1682823529"
-        
-    }
+const SingleProduct = (props) => {
+
     const{orderedProduct, setorderedProduct} = useState(true);
   return (
     <>
@@ -30,7 +30,7 @@ const SingleProduct = () => {
             <div className="col-6">
                 <div className="main-product-image home-wrapper-2 py-5">
                 <div>
-                        <ReactImageZoom {...props} />
+                        <img src={productImage} alt="samsung" />
                 </div>
 
                 </div>
@@ -82,7 +82,7 @@ const SingleProduct = () => {
                             <button className="button">
                                 Buy Now
                             </button>
-                            <Link to="/SignUp" className="button SignUp text-white">
+                            <Link to="/cart" className="button SignUp text-white">
                                 Add to Cart
                             </Link>
                         </div>
@@ -198,14 +198,14 @@ const SingleProduct = () => {
         <div className="container-xxl">
             <div className="row">
                 <div className="col-12">
-                    <h3 className="section-heading">Our</h3>
+                    <h3 className="section-heading">Similar Products</h3>
                 </div>
             </div>
-            <div className="row">
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+            <div className="row py-4">
+                <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone3} />
+                <ProductCard title="Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "₹94,999" img={fphone4} />
+                <ProductCard title="Apple iPhone 14 Pro (128 GB) - Space Black" price="₹1,19,999 " img={fphone1} />
+                <ProductCard title="Samsung Galaxy S22 5G (Green, 8GB, 128GB Storage)" price = "₹62,999"  img={fphone2} />
 
             </div>
         </div>

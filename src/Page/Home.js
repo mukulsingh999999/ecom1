@@ -4,8 +4,32 @@ import Marquee from "react-fast-marquee";
 import ProductCard from '../components/ProductCard';
 import SpecialProducts from '../components/SpecialProducts';
 import Container from "../components/Container"
+
 ///////////////////////////////////////////////////////////
-import mainbanner1 from "../images/main-banner-1.jpg";
+import mainbanner1 from "../images/banner1.jpg";
+import mainbanner6 from "../images/banner6.gif";
+import mainbanner8 from "../images/banner8.jpg";
+import mainbanner9 from "../images/banner9.jpg";
+import mainbanner10 from "../images/banner10.jpg";
+
+import fphone1 from "../images/iphone14pro.jpg";
+import fphone2 from "../images/galaxys22.jpg";
+import fphone3 from "../images/galaxys22ultra.jpg";
+import fphone4 from "../images/xiamo12tpro.jpg";
+
+
+import phone1 from "../images/redmia2.jpg"
+import phone2 from "../images/oneplus10pro.jpg"
+import phone3 from "../images/iqooneo7.jpg"
+import phone4 from "../images/lavablaze2.jpg"
+
+
+
+
+import mainbanner2 from "../images/banner2.jpg";
+import mainbanner3 from "../images/banner3.jpg";
+
+
 import catbanner1 from "../images/catbanner-01.jpg"
 import catbanner2 from "../images/catbanner-02.jpg"
 import catbanner3 from "../images/catbanner-03.jpg"
@@ -41,61 +65,14 @@ const Home = () => {
     <>
       <Container class1="home-wrapper-1 py-5">
       <div className="row">
-          <div className="col-6">
-            <div className="main-banner position-relative p-3">
-              <img className = "img-fluid rounded-3"src={mainbanner1} alt="main-banner" />
-               <div className="main-banner-content position-absolute">
-                <h4>SUPERCHARGED FOR PROS</h4>
-                <h5>iPad S13+ Pro</h5>
-                <p>From ₹79999 or ₹3200/mo</p>
-                <Link className='button'>Buy Now</Link>
-            </div>
-            </div>
-            </div>
-
-            <div className="col-6">
-              <div className="d-flex gap-10 flex-wrap justify-content-center align-items-center"> 
-                <div className="small-banner position-relative">
-                  <img className = "img-fluid rounded-3" src={catbanner1} alt="cat-banner" />
-                    <div className="small-banner-content position-absolute">
-                      <h4>Best Sale</h4>
-                      <h5>iPad S13+ Pro</h5>
-                      <p>From ₹79999 </p>
-                    </div>
-            </div>
-
-                <div className="small-banner position-relative">
-                  <img className = "img-fluid rounded-3" src={catbanner2} alt="cat-banner" />
-                    <div className="small-banner-content position-absolute">
-                      <h4>SUPERCHARGED </h4>
-                      <h5>iPad S13+ Pro</h5>
-                      <p>From ₹79999 </p>
-              </div>
-            </div>
-
-           
-                <div className="small-banner position-relative">
-                  <img className = "img-fluid rounded-3" src={catbanner3} alt="cat-banner" />
-                    <div className="small-banner-content position-absolute">
-                      <h4>SUPERCHARGED </h4>
-                      <h5>iPad S13+ Pro</h5>
-                      <p>From ₹79999 </p>
-              </div>
-            </div>
-
-            
-                <div className="small-banner position-relative">
-                  <img className = "img-fluid rounded-3" src={catbanner4} alt="cat-banner" />
-                    <div className="small-banner-content position-absolute">
-                      <h4>SUPERCHARGED </h4>
-                      <h5>iPad S13+ Pro</h5>
-                      <p>From ₹79999 </p>
-              </div>
-            </div>
-            
+          <div className="col-12">
+              <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
+            <div className="main-banner-3 d-flex  justify-content-center">
+              <img className = "img-fluid rounded-3 banner-img" src={mainbanner1} alt="main-banner" />
           </div>
-          </div>
+              </Link>
         </div>
+      </div>
       </Container>
 
       <Container class1="home-wrapper-2 py-5">
@@ -134,12 +111,20 @@ const Home = () => {
         </div>
       </Container>
 
+      <div className="row pt-5">
+        <div className="col-12">
+          <div className="d-flex justify-content-center">
+            <img className="banner-img2" src={mainbanner6} alt="banner6" />
+          </div>
+        </div>
+      </div>
+
       <Container class1="home-wrapper-3 py-5">
       <div className="row">
+              <Link to="/OurStore" onClick={()=>{window.scroll(0,0)}}>
           <div className="col-12">
             
             <div className="categories d-flex flex-wrap align-items-center justify-content-between">
-  
               <div className='d-flex align-items-center gap-10'>
                 <div>
                 <h6>Galaxy Series</h6>
@@ -171,46 +156,14 @@ const Home = () => {
               </div>
               <img src={oneplus10} className='itemsimg' alt="redmi" />
                 </div>
-                
-                <div className='d-flex align-items-center gap-10'>
-                <div>
-                <h6>Galaxy Series</h6>
-                <p>10 items</p>
-              </div>
-              <img src={s22ultra} className='itemsimg' alt="s22" />
-                </div>
-
-                <div className='d-flex align-items-center gap-10'>
-                <div>
-                <h6>Iphone 14</h6>
-                <p>10 items</p>
-              </div>
-              <img src={s22ultra} className='itemsimg' alt="s22" />
-                </div>
-
-                <div className='d-flex align-items-center gap-15'>
-                <div>
-                <h6>Mi Note Series</h6>
-                <p>10 items</p>
-              </div>
-              <img src={minote} className='itemsimg' alt="redmi" />
-                </div>
-
-                <div className='d-flex align-items-center gap-10'>
-                <div>
-                <h6>One PLus</h6>
-                <p>10 items</p>
-              </div>
-              <img src={oneplus10} className='itemsimg' alt="redmi" />
-                </div>
-
             </div>
           </div>
+          </Link>
         
         </div>
       </Container>
 
-      <Container className="marque-wrapper py-5">
+      <Container class1="marque-wrapper py-5">
       <div className="row">
           <div className="col-12">
             <div className="marquee-inner-wrapper card-wrapper">
@@ -248,32 +201,56 @@ const Home = () => {
         </div>
       </Container>
 
-      <Container className="blog-wrapper py-5 home-wrapper-2">
+      <Container class1="blog-wrapper py-5 home-wrapper-2 ">
         <div className="row">
-            <div className="col-12">
+            <div className="col-12 mb-3">
               <h3 className="section-heading">
                 Featured Collection
               </h3>
             </div>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
 
+              <ProductCard title="Apple iPhone 14 Pro (128 GB) - Space Black" price="₹1,19,999 " img={fphone1} />
+              <ProductCard title="Samsung Galaxy S22 5G (Green, 8GB, 128GB Storage)" price = "₹62,999"  img={fphone2} />
+              <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone3} />
+              <ProductCard title="Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "₹94,999" img={fphone4} />
           </div>
       </Container>
-  
-      <Container className="special-wrapper home-wrapper-2 py-5">
+
+      <Container>
+       <div className="row pb-4">
+          <div className="col-12">
+            <div className="d-flex justify-content-center align-items-center">    
+              <img src={mainbanner8} className='banner-img3' alt="mainbaner8" />
+            </div>
+          </div>
+        </div>     
+      </Container>
+
+
+      <Container>
+        <div className="row pt-4">
+          <div className="col-12">
+            <div className="d-flex justify-content-center">
+            <img src={mainbanner9} className='banner-img3' alt="mainbanner9" />
+            </div>
+          </div>
+        </div> 
+      </Container>
+
+
+
+      <Container class1="special-wrapper home-wrapper-2 py-5">
         <div className="row">
             <div className="col-12">
-              <h3 className="special-heading">Special Products</h3>
+              <img src={mainbanner10} alt="banner10" />
             </div>
           </div>
           <div className="row">
-            <SpecialProducts/>
-            <SpecialProducts/>
-            <SpecialProducts/>
-            <SpecialProducts/>
+            
+            <SpecialProducts img={phone1}/>
+            <SpecialProducts img={phone2}/>
+            <SpecialProducts img={phone3}/>
+            <SpecialProducts img={phone4}/>
           </div>
       </Container>
 

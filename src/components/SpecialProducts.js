@@ -1,19 +1,20 @@
 import React from 'react';
-///////////////////////////////////////////
-import watch2 from "../images/watch.jpg"
+import {Link} from "react-router-dom"
 ////////////////////////////////////////
 
-const SpecialProducts = () => {
-  return (
+const SpecialProducts = (props) => {
+  return ( 
     <>
     <div className="col-3">
         <div className="special-product-card">
             <div className="d-flex justify-content-between">
-                <img src={watch2} alt="watch" />
-
+              <Link to="/singleproduct" onClick={()=>{window.scroll(0,0)}} >
+                <img src={props.img} alt="watch" />
+              </Link>
             </div>
         </div>
     </div>
+
     </>
   )
 }
