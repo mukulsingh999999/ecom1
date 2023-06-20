@@ -7,7 +7,7 @@ const SpecialProducts = (props) => {
     <>
     <div className="col-3">
         <div className="special-product-card">
-            <div className="d-flex justify-content-between">
+            <div>
               <Link to="/singleproduct" onClick={()=>{window.scroll(0,0)}} >
                 <img src={props.img} alt="watch" />
               </Link>

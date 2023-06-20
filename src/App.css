@@ -78,6 +78,12 @@ height: 2.33rem;
 
 
 /* Header part */
+
+.header-upper-links p{
+  color: white ;
+}
+
+
 .header-bottom, 
 .header-bottom .dropdown .btn{
   background-color: var(--color-232f3e);
@@ -213,8 +219,15 @@ footer .input-group-text{
 /* home wrapper-2ends */
 
 /* home wrapper-3 */
-.categories{
+/* .home-wrapper-3{
   background-color: var(--color-f5f5f7);
+} */
+.home-wrapper-3 .categories h6,
+p{
+  color: var(--color--777777);
+}
+.categories{
+  background-color: white;
   box-shadow:  0 0 10px #b7b7b7;
   padding: 15px;
 }
@@ -249,7 +262,9 @@ footer .input-group-text{
   border-radius: 10px;
   overflow:hidden;
 }
-
+.product-card .product-image{
+  width:100%
+}
 .product-card .product-details p{
   color: var(--color--777777)
 }
@@ -263,8 +278,8 @@ footer .input-group-text{
   line-height: 22px;
 }
 .action-bar{
-  top:10%;
-  right:-23px;
+  bottom:10px;
+  left:23px;
   transition: 0.3s;
 }
 .product-card:hover .action-bar
@@ -273,8 +288,8 @@ footer .input-group-text{
 }
 
 .wishlist-icon{
-  top:3%;
-  right:11px;
+  top:6px;
+  left:270px;
 }
 
 /* ProductCardends */
@@ -626,3 +641,14 @@ border-bottom{
 
 
  /* ////////////Shipping page ends//// */
+/* //////////FAQ starts/////////// */
+.faqq{
+  font-weight: 500;
+}
+.faqans{
+  /* color: black; */
+}
+
+
+
+/* //////////FAQ ends/////////// */

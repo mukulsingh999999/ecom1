@@ -78,13 +78,10 @@ const Footer = () => {
               Information
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link to="/PrivacyPolicy" className="text-white py-2 ">Privacy Policy</Link>
-              <Link to="/RefundPolicy" className="text-white py-2">Refund Policy </Link>
-              <Link to="/ShippingPolicy" className="text-white py-2">Shipping Policy</Link>
-              <Link to = "/Terms" className="text-white py-2">Terms and Conditions</Link>
-              <Link  className="text-white py-2">Blogs</Link>
-
-
+              <Link to="/PrivacyPolicy"  onClick={()=>{window.scroll(0,0)}} className="text-white py-2 ">Privacy Policy</Link>
+              <Link to="/RefundPolicy"  onClick={()=>{window.scroll(0,0)}} className="text-white py-2">Refund Policy </Link>
+              <Link to="/ShippingPolicy"  onClick={()=>{window.scroll(0,0)}} className="text-white py-2">Shipping Policy</Link>
+              {/* <Link to = "/Terms" className="text-white py-2">Terms and Conditions</Link> */}
 
             </div>
           </div>
@@ -93,9 +90,9 @@ const Footer = () => {
               Account
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 ">About Us</Link>
-              <Link className="text-white py-2">FAQ</Link>
-              <Link className="text-white py-2">Contact</Link>
+              <Link className="text-white py-2 " onClick={()=>{window.scroll(0,0)}} >About Us</Link>
+              <Link to="/FAQ" className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >FAQ</Link>
+              <Link to="/Contact" className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Contact</Link>
 
             </div>
           </div>
@@ -104,10 +101,10 @@ const Footer = () => {
               Quick-Links
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 ">Laptops</Link>
-              <Link className="text-white py-2">Headphones</Link>
-              <Link className="text-white py-2">Tablets</Link>
-              <Link className="text-white py-2">Watch</Link>
+              <Link className="text-white py-2 " onClick={()=>{window.scroll(0,0)}} >Laptops</Link>
+              <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Headphones</Link>
+              <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Tablets</Link>
+              <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Watch</Link>
             </div>
 
           </div>

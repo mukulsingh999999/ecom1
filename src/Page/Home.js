@@ -4,9 +4,13 @@ import Marquee from "react-fast-marquee";
 import ProductCard from '../components/ProductCard';
 import SpecialProducts from '../components/SpecialProducts';
 import Container from "../components/Container"
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel  } from 'react-responsive-carousel';
+import { CCarousel } from '@coreui/react'
+import { CCarouselItem } from '@coreui/react'
+import { CImage } from '@coreui/react';
+// import CCarousel from '@coreui/react/src/components/carousel/CCarousel'
 ///////////////////////////////////////////////////////////
-import mainbanner1 from "../images/banner1.jpg";
 import mainbanner6 from "../images/banner6.gif";
 import mainbanner8 from "../images/banner8.jpg";
 import mainbanner9 from "../images/banner9.jpg";
@@ -24,10 +28,13 @@ import phone3 from "../images/iqooneo7.jpg"
 import phone4 from "../images/lavablaze2.jpg"
 
 
-
-
+import mainbanner1 from "../images/banner1.jpg";
 import mainbanner2 from "../images/banner2.jpg";
 import mainbanner3 from "../images/banner3.jpg";
+import mainbanner4 from "../images/banner4.jpg";
+import mainbanner5 from "../images/mainbanner4.jpg";
+
+
 
 
 import catbanner1 from "../images/catbanner-01.jpg"
@@ -66,11 +73,35 @@ const Home = () => {
       <Container class1="home-wrapper-1 py-5">
       <div className="row">
           <div className="col-12">
+
+            <Carousel autoPlay="1" infiniteLoop="1" interval="2500" showStatus="false" showIndicators="false" showThumbs="false"  >
+              <div>
               <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
-            <div className="main-banner-3 d-flex  justify-content-center">
-              <img className = "img-fluid rounded-3 banner-img" src={mainbanner1} alt="main-banner" />
-          </div>
+                <img src={mainbanner2} className = "img-fluid rounded-3 banner-img" alt="mainbanner2" />
               </Link>
+              </div>
+
+              <div>
+              <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
+                <img src={mainbanner3} className = "img-fluid rounded-3 banner-img" alt="mainbanner3" />
+                </Link>
+              </div>
+              <div>
+              <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
+                <img src={mainbanner4} className = "img-fluid rounded-3 banner-img" alt="mainbanner4" />
+                </Link>
+              </div>
+              <div>
+              <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
+                <img src={mainbanner5} className = "img-fluid rounded-3 banner-img" alt="mainbanner5" />
+                </Link>
+              </div>
+                <div className="main-banner-3">
+                <Link to="/ourstore" onClick={()=>{window.scroll(0,0)}}>
+                  <img className = "img-fluid rounded-3 banner-img" src={mainbanner1} alt="main-banner" />
+                </Link>
+              </div>
+          </Carousel>
         </div>
       </div>
       </Container>
@@ -166,6 +197,8 @@ const Home = () => {
       <Container class1="marque-wrapper py-5">
       <div className="row">
           <div className="col-12">
+            
+
             <div className="marquee-inner-wrapper card-wrapper">
             <Marquee speed = "200" loop className = "d-flex" >
               <div className="d-flex gap-50">
@@ -197,31 +230,41 @@ const Home = () => {
 
             </Marquee>
             </div>
+        
           </div>
         </div>
       </Container>
 
       <Container class1="blog-wrapper py-5 home-wrapper-2 ">
         <div className="row">
-            <div className="col-12 mb-3">
               <h3 className="section-heading">
                 Featured Collection
               </h3>
-            </div>
+                 <ProductCard title="Apple iPhone 14 Pro (128 GB) - Space Black" price="₹1,19,999 " img={fphone1} />
+  
+          
+                  <ProductCard title="Samsung Galaxy S22 5G (Green, 8GB, 128GB Storage)" price = "₹62,999"  img={fphone2} />
+                
+                
 
-              <ProductCard title="Apple iPhone 14 Pro (128 GB) - Space Black" price="₹1,19,999 " img={fphone1} />
-              <ProductCard title="Samsung Galaxy S22 5G (Green, 8GB, 128GB Storage)" price = "₹62,999"  img={fphone2} />
-              <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone3} />
-              <ProductCard title="Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "₹94,999" img={fphone4} />
-          </div>
+                  <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone3} />
+                
+                 
+
+                  <ProductCard title="Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "₹94,999" img={fphone4} />
+                
+
+           </div>
       </Container>
 
       <Container>
        <div className="row pb-4">
           <div className="col-12">
-            <div className="d-flex justify-content-center align-items-center">    
-              <img src={mainbanner8} className='banner-img3' alt="mainbaner8" />
-            </div>
+            <Link to="/ourstore" onClick={()=> {window.scroll(0,0)}}>
+              <div className="d-flex justify-content-center align-items-center">    
+                <img src={mainbanner8} className='banner-img3' alt="mainbaner8" />
+              </div>
+            </Link>
           </div>
         </div>     
       </Container>
@@ -230,9 +273,11 @@ const Home = () => {
       <Container>
         <div className="row pt-4">
           <div className="col-12">
+              <Link to="/ourstore" onClick={()=> {window.scroll(0,0)}}>
             <div className="d-flex justify-content-center">
-            <img src={mainbanner9} className='banner-img3' alt="mainbanner9" />
+                <img src={mainbanner9} className='banner-img3' alt="mainbanner9" />
             </div>
+              </Link>
           </div>
         </div> 
       </Container>
@@ -246,7 +291,6 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            
             <SpecialProducts img={phone1}/>
             <SpecialProducts img={phone2}/>
             <SpecialProducts img={phone3}/>

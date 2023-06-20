@@ -20,7 +20,7 @@ import RefundPolicy from "./Page/RefundPolicy";
 import SingleProduct from "./Page/SingleProduct";
 import Cart  from "./Page/Cart";
 import Checkout from "./Page/Checkout";
-
+import FAQ from "./Page/FAQ";
 
 
 
@@ -48,6 +48,8 @@ const App = () => {
       <Route path = "terms" element = {<Terms/>} />
       <Route path = "cart" element = {<Cart/>} />
       <Route path="checkout" element={<Checkout/>}></Route>
+      <Route path="faq" element={<FAQ/>}></Route>
+
 
 
 
