@@ -1,7 +1,11 @@
 import React from 'react'
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from "../components/Meta";
-import watch from "../images/watch.jpg"
+import cartproduct1 from "../images/s22ultra.jpg"
+import cartproduct2 from "../images/iphone14pro.jpg"
+import cartproduct3 from "../images/oneplus10pro.jpg"
+
+
 import {AiFillDelete} from "react-icons/ai"
 import { Link } from 'react-router-dom';
 import Container from "../components/Container"
@@ -27,12 +31,12 @@ const Cart = () => {
 
                             <div className="cart-col-1 d-flex align-items-center gap-15">
                                 <div className='w-35'>
-                                    <img src={watch} className= "img-fluid" alt="productimage" />
+                                    <img src={cartproduct1} className= "img-fluid" alt="productimage" />
                                 </div>
                                 <div className='w-75'>
-                                    <h5 className='title'>121</h5>
-                                    <p className="color">111</p>
-                                    <p className="size">112</p>
+                                    <h5 className='title'></h5>
+                                    <p className="color"></p>
+                                    <p className="size"></p>
                                 </div>
                             </div>
 
@@ -65,12 +69,12 @@ const Cart = () => {
 
                             <div className="cart-col-1 d-flex align-items-center gap-15">
                                 <div className='w-35'>
-                                    <img src={watch} className= "img-fluid" alt="productimage" />
+                                    <img src={cartproduct2} className= "img-fluid" alt="productimage" />
                                 </div>
                                 <div className='w-75'>
-                                    <h5 className='title'>121</h5>
-                                    <p className="color">111</p>
-                                    <p className="size">112</p>
+                                    <h5 className='title'></h5>
+                                    <p className="color"></p>
+                                    <p className="size"></p>
                                 </div>
                             </div>
 

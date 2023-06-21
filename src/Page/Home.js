@@ -247,12 +247,12 @@ const Home = () => {
                 
                 
 
-                  <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone3} />
+                  <ProductCard title=" Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "94,999" img={fphone3} />
                 
                  
 
-                  <ProductCard title="Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)" price = "₹94,999" img={fphone4} />
-                
+                  <ProductCard title="Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage)" price = "₹79,999" img={fphone4} />
+                 
 
            </div>
       </Container>

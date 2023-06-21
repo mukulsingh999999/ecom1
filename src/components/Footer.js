@@ -90,7 +90,7 @@ const Footer = () => {
               Account
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 " onClick={()=>{window.scroll(0,0)}} >About Us</Link>
+              <Link className="text-white py-2 " to="/about" onClick={()=>{window.scroll(0,0)}} >About Us</Link>
               <Link to="/FAQ" className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >FAQ</Link>
               <Link to="/Contact" className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Contact</Link>
 
@@ -101,7 +101,7 @@ const Footer = () => {
               Quick-Links
             </h4>
             <div className="footer-links d-flex flex-column">
-              <Link className="text-white py-2 " onClick={()=>{window.scroll(0,0)}} >Laptops</Link>
+              <Link className="text-white py-2 " onClick={()=>{window.scroll(0,0)}} to="/ourstore">Store</Link>
               <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Headphones</Link>
               <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Tablets</Link>
               <Link className="text-white py-2" onClick={()=>{window.scroll(0,0)}} >Watch</Link>

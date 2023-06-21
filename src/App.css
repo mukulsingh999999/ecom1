@@ -16,6 +16,8 @@
   --color--1c1c1b: #1c1c1b;
   --color--777777: #777777;
   --color-febd69: #febd69;
+  --color-18202a: #18202a;
+  --color-f90:#f90;
 }
 .card-wrapper{
   background-color: white;
@@ -286,11 +288,21 @@ p{
 {
   right: 10px;
 }
-
+/* ////////////////WISHLIST STARTS//////////// */
 .wishlist-icon{
   top:6px;
   left:270px;
 }
+.wishlist-card-image{
+  width: 60%;
+}
+.wishitem3{
+background-color: #003366;
+
+}
+
+
+/* ////////////////WISHLIST ends//////////// */
 
 /* ProductCardends */
 
@@ -367,6 +379,10 @@ img {
 
 /* //////Contact us */
 
+.contact-wrapper{
+  background: linear-gradient(180deg, rgba(35,47,62,1) 0%, rgba(92,101,112,1) 19%, rgba(255,255,255,1) 53%);
+
+}
 .contact-inner-wrapper{
   padding: 20px 30px;
   border-radius: 10px;
@@ -432,9 +448,15 @@ img {
 /* ends compare products */
 
 /* /////////LOGIN  */
+.login-wrapper{
+  background: rgb(11,187,191);
+background: linear-gradient(118deg, rgba(11,187,191,1) 0%, rgba(233,190,254,1) 58%);
+}
+
 
 .login-wrapper .auth-card{
-  background-color: white;
+
+/* background: linear-gradient(118deg, rgba(11,187,191,1) 0%, rgba(233,190,254,1) 58%); */
   margin: 30px auto;
   width: 500px;
   padding: 20px;
@@ -645,10 +667,77 @@ border-bottom{
 .faqq{
   font-weight: 500;
 }
-.faqans{
-  /* color: black; */
+
+/* //////////FAQ ends/////////// */
+
+
+/* //////////ABOUT STARTS///////// */
+
+.about-wrapper-top{
+  background-color: var(--color-18202a);
+  color: white;
+}
+.aboutpara1{
+  color: white;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0.4px;
 }
 
 
 
-/* //////////FAQ ends/////////// */
+.about-card{
+  background-color: var(--color-232f3e);
+  height: 18rem;
+  width: 95%;
+  position:relative;
+}
+.card-para{
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+}
+.card-head{
+  color: var(--color-f90);
+}
+.about-btn{
+  border:1px solid var(--color--777777);
+
+}
+.aboutus-btn{
+  position: absolute;
+  bottom: 10%;
+}
+
+
+
+
+.about-wrapper-middle{
+  /* background: linear-gradient(var(--color-18202a), transparent 50%); */
+  background: linear-gradient(
+    to top, 
+    #ffffff 0%, 
+    #ffffff 50%, 
+    var(--color-18202a) 50%, 
+    var(--color-18202a) 100%)
+}
+.banner-img{
+  width: 90%;
+}
+
+.para1 {
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+
+}
+.para2{
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+
+}
+
+/* //////////ABOUT ends///////// */

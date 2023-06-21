@@ -40,7 +40,7 @@ const Header = () => {
           
           <div className="col-2">
             <h2>
-            <Link className="text-white">
+            <Link className="text-white" to="/">
             Amazon
             </Link>
             </h2>
